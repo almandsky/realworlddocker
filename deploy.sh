@@ -1,5 +1,4 @@
 #!/bin/bash
-docker build -t almandsky/sample-node .
 docker push almandsky/sample-node
 
 ssh deploy@159.203.228.196 << EOF
