@@ -15,4 +15,4 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - ./deploy.sh
+      - ./deploy.sh $PROD_DB_NAME $PROD_DB_HOST $PROD_DB_USER $PROD_DB_PASSWORD
